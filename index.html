@@ -597,10 +597,9 @@
   }
   .autor-photo{
     aspect-ratio:4/5;
-    background:var(--ink-3);
+    background:transparent;
     position:relative;
     overflow:hidden;
-    border:1px solid rgba(232,224,208,.08);
   }
   .autor-photo .placeholder{
     position:absolute; inset:0;
@@ -609,6 +608,14 @@
       linear-gradient(180deg, #1E1A17, #120F0D);
     display:flex; align-items:center; justify-content:center;
     flex-direction:column; gap:18px;
+  }
+  .autor-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center top;
+    mask-image: radial-gradient(ellipse at center, black 55%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 55%, transparent 100%);
   }
   .autor-photo .initials{
     font-family:var(--serif-display); font-weight:500;
