@@ -1,0 +1,1137 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dados Sangrientos — Tony Vazz | Novela de espionaje en la España de 1947</title>
+<meta name="description" content="Un espía americano novato es enviado a la Cádiz de posguerra en 1947. Primera novela de Tony Vazz. Lee el primer capítulo gratis." />
+<meta property="og:title" content="Dados Sangrientos — Tony Vazz" />
+<meta property="og:description" content="Cádiz, 1947. Un espía americano. Una misión imposible. Un régimen que no perdona." />
+<meta property="og:image" content="assets/og-share.jpg" />
+<meta property="og:type" content="book" />
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230A0A0A'/><text x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-size='22' fill='%23C41E1E'>%E2%99%A0</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "Dados Sangrientos",
+  "author": { "@type": "Person", "name": "Tony Vazz" },
+  "isbn": "978-84-09-61580-3",
+  "numberOfPages": 600,
+  "inLanguage": "es",
+  "image": "assets/portada.png",
+  "description": "Novela de espionaje ambientada en la España de 1947. Un agente americano novato es enviado a la Cádiz franquista."
+}
+</script>
+<style>
+  :root{
+    --ink-0:#0A0A0A;
+    --ink-1:#111111;
+    --ink-2:#15110F;
+    --ink-3:#1A1614;
+    --bone:#E8E0D0;
+    --bone-dim:#C9C0AD;
+    --ash:#8A8076;
+    --ash-dim:#5C544B;
+    --blood:#8B0000;
+    --blood-live:#C41E1E;
+    --gold:#A68B5B;
+    --ease:cubic-bezier(0.77,0,0.175,1);
+    --serif-display:"Cormorant Garamond", "Playfair Display", Georgia, serif;
+    --serif-body:"EB Garamond", "Libre Baskerville", Georgia, serif;
+    --mono:"IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--ink-0);
+    color:var(--bone);
+    font-family:var(--serif-body);
+    font-size:18px;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    font-feature-settings:"liga","dlig","onum";
+    overflow-x:hidden;
+  }
+
+  /* Film grain overlay */
+  body::before{
+    content:"";
+    position:fixed; inset:0;
+    pointer-events:none;
+    z-index:1000;
+    opacity:.06;
+    mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    animation:grain 1.6s steps(6) infinite;
+  }
+  @keyframes grain{
+    0%{transform:translate(0,0)}
+    20%{transform:translate(-2%,1%)}
+    40%{transform:translate(1%,-1%)}
+    60%{transform:translate(-1%,2%)}
+    80%{transform:translate(2%,-2%)}
+    100%{transform:translate(0,0)}
+  }
+  /* Vignette */
+  body::after{
+    content:"";
+    position:fixed; inset:0;
+    pointer-events:none;
+    z-index:999;
+    background:radial-gradient(ellipse at center, transparent 45%, rgba(0,0,0,.55) 95%, rgba(0,0,0,.85) 100%);
+  }
+
+  /* Selection */
+  ::selection{background:var(--blood);color:var(--bone)}
+
+  /* NAV */
+  .nav{
+    position:fixed; top:0; left:0; right:0;
+    z-index:100;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px clamp(20px,4vw,48px);
+    background:linear-gradient(to bottom, rgba(10,10,10,.92), rgba(10,10,10,.55) 70%, transparent);
+    backdrop-filter:blur(2px);
+    transition:background .5s var(--ease);
+  }
+  .nav.solid{background:rgba(10,10,10,.94); border-bottom:1px solid rgba(232,224,208,.06)}
+  .nav-brand{
+    font-family:var(--mono); font-size:11px; letter-spacing:.28em; text-transform:uppercase;
+    color:var(--bone); display:flex; align-items:center; gap:10px;
+  }
+  .nav-brand .spade{color:var(--blood-live); font-size:14px; line-height:1}
+  .nav-links{display:flex; gap:28px; font-family:var(--mono); font-size:11px; letter-spacing:.2em; text-transform:uppercase}
+  .nav-links a{color:var(--ash); text-decoration:none; transition:color .4s var(--ease)}
+  .nav-links a:hover{color:var(--bone)}
+  .nav-cta{
+    font-family:var(--mono); font-size:10px; letter-spacing:.22em; text-transform:uppercase;
+    color:var(--bone); border:1px solid var(--blood);
+    padding:8px 14px; text-decoration:none;
+    transition:background .4s var(--ease), color .4s var(--ease);
+  }
+  .nav-cta:hover{background:var(--blood); color:var(--bone)}
+  @media (max-width:820px){ .nav-links{display:none} }
+
+  /* Mute toggle */
+  .mute{
+    position:fixed; bottom:20px; right:20px; z-index:50;
+    width:42px; height:42px; border-radius:50%;
+    background:rgba(10,10,10,.8); border:1px solid rgba(232,224,208,.15);
+    color:var(--ash); cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--mono); font-size:10px; letter-spacing:.1em;
+    transition:all .4s var(--ease);
+  }
+  .mute:hover{color:var(--bone); border-color:var(--blood)}
+  .mute[data-on="true"]{color:var(--blood-live); border-color:var(--blood-live)}
+
+  /* Reading progress bar (for chapter) */
+  .chapter-progress{
+    position:fixed; top:0; right:0; bottom:0; width:2px;
+    background:rgba(232,224,208,.05);
+    z-index:40; opacity:0; transition:opacity .6s var(--ease);
+  }
+  .chapter-progress.active{opacity:1}
+  .chapter-progress .fill{
+    position:absolute; top:0; left:0; right:0; height:0%;
+    background:linear-gradient(to bottom, var(--blood), var(--blood-live));
+    transition:height .1s linear;
+    box-shadow:0 0 8px rgba(196,30,30,.6);
+  }
+
+  /* Sections */
+  section{position:relative; padding:120px clamp(20px,5vw,80px); max-width:100%;}
+  .section-label{
+    font-family:var(--mono); font-size:10px; letter-spacing:.35em; text-transform:uppercase;
+    color:var(--ash-dim); display:flex; align-items:center; gap:14px;
+    margin-bottom:18px;
+  }
+  .section-label::before{content:""; width:28px; height:1px; background:var(--blood)}
+
+  /* Display type */
+  h1,h2,h3{font-family:var(--serif-display); font-weight:500; margin:0; line-height:1.02; letter-spacing:-.01em}
+  .h-hero{
+    font-size:clamp(64px, 11vw, 168px);
+    font-weight:600;
+    line-height:.9;
+    letter-spacing:-.02em;
+  }
+  .h-hero .line{display:block}
+  .h-hero .sangrientos{font-style:italic; color:var(--bone)}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    min-height:100vh;
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:60px;
+    align-items:center;
+    padding-top:140px; padding-bottom:60px;
+  }
+  .hero-left{position:relative; z-index:2}
+  .hero-kicker{
+    font-family:var(--mono); font-size:11px; letter-spacing:.4em; text-transform:uppercase;
+    color:var(--blood-live); margin-bottom:28px;
+    display:flex; align-items:center; gap:12px;
+  }
+  .hero-kicker::before{content:""; width:22px; height:1px; background:var(--blood-live)}
+  .hero-kicker::after{content:""; width:22px; height:1px; background:var(--blood-live)}
+  .hero-pitch{
+    margin-top:34px;
+    font-family:var(--serif-display);
+    font-style:italic;
+    font-size:clamp(22px, 2.2vw, 30px);
+    color:var(--bone-dim);
+    max-width:560px;
+    line-height:1.35;
+  }
+  .hero-pitch .accent{color:var(--blood-live); font-style:normal; font-family:var(--serif-display)}
+  .hero-sub{
+    margin-top:30px;
+    font-family:var(--serif-body);
+    font-size:17px;
+    color:var(--ash);
+    max-width:520px;
+    line-height:1.6;
+  }
+  .hero-ctas{
+    margin-top:44px;
+    display:flex; flex-wrap:wrap; gap:22px; align-items:center;
+  }
+  .btn-primary{
+    position:relative;
+    display:inline-flex; align-items:center; gap:14px;
+    font-family:var(--mono); font-size:12px; letter-spacing:.28em; text-transform:uppercase;
+    color:var(--bone);
+    background:var(--blood-live);
+    padding:20px 32px;
+    text-decoration:none;
+    border:none;
+    cursor:pointer;
+    transition:background .5s var(--ease), letter-spacing .5s var(--ease);
+    overflow:visible;
+  }
+  .btn-primary::before{
+    content:""; position:absolute; inset:0; background:var(--blood);
+    transform:scaleY(0); transform-origin:bottom; transition:transform .5s var(--ease); z-index:0;
+  }
+  .btn-primary > *:not(.btn-drip){position:relative; z-index:1}
+  .btn-primary:hover{letter-spacing:.32em}
+  .btn-primary:hover::before{transform:scaleY(1)}
+  .btn-primary .arrow{transition:transform .5s var(--ease); font-size:14px}
+  .btn-primary:hover .arrow{transform:translateX(6px)}
+
+  /* Blood drips — slow, continuous dripping on hover */
+  .btn-drip{
+    position:absolute; top:100%; left:0; right:0; width:100%;
+    height:0; pointer-events:none; z-index:2;
+  }
+  .btn-drip > span{
+    position:absolute; top:-1px; width:2px; background:var(--blood-live);
+    height:0;
+    border-radius:0 0 2px 2px;
+    box-shadow:0 0 6px rgba(196,30,30,.55), inset 0 0 2px rgba(255,80,80,.4);
+    transform-origin:top;
+  }
+  /* The trickle growing down the button */
+  .btn-drip > span::before{
+    content:""; position:absolute; top:0; left:0; width:100%; height:100%;
+    background:linear-gradient(to bottom, #9a0000 0%, #c41e1e 40%, #e53030 100%);
+  }
+  /* The hanging droplet that forms and falls */
+  .btn-drip > span::after{
+    content:""; position:absolute; bottom:-2px; left:50%;
+    width:6px; height:6px; background:radial-gradient(circle at 35% 35%, #ff4a4a, #8b0000);
+    border-radius:50% 50% 55% 55%;
+    transform:translateX(-50%) scale(0);
+    transform-origin:center top;
+    box-shadow:0 2px 4px rgba(0,0,0,.4);
+    opacity:0;
+  }
+
+  /* Trickle grows continuously while hovered */
+  @keyframes dripGrow {
+    0%   { height:0; }
+    100% { height:var(--dh, 120px); }
+  }
+  /* Droplet forms, stretches, detaches, falls, repeats */
+  @keyframes dripDrop {
+    0%   { transform:translate(-50%, 0) scale(0,0); opacity:0; border-radius:50%; }
+    12%  { transform:translate(-50%, 0) scale(1,1); opacity:1; border-radius:50% 50% 55% 55%; }
+    45%  { transform:translate(-50%, 2px) scale(1.1, 1.4); opacity:1; border-radius:45% 45% 60% 60%; }
+    55%  { transform:translate(-50%, 6px) scale(1, 1.6); opacity:1; border-radius:40% 40% 70% 70%; }
+    70%  { transform:translate(-50%, 80px) scale(0.9, 1.2); opacity:1; border-radius:50%; }
+    95%  { transform:translate(-50%, 180px) scale(0.6, 0.8); opacity:0; border-radius:50%; }
+    100% { transform:translate(-50%, 200px) scale(0.4, 0.6); opacity:0; }
+  }
+
+  /* Activate on hover/focus of ANY bleeding button */
+  .btn-primary:hover .btn-drip > span,
+  .amazon-cta:hover .btn-drip > span,
+  .btn-ghost:hover .btn-drip > span,
+  .nav-cta:hover .btn-drip > span,
+  .btn-text.bleed:hover .btn-drip > span,
+  .autor-social a:hover .btn-drip > span{
+    animation: dripGrow var(--gd, 3.2s) cubic-bezier(0.55,0,0.4,1) forwards;
+  }
+  .btn-primary:hover .btn-drip > span::after,
+  .amazon-cta:hover .btn-drip > span::after,
+  .btn-ghost:hover .btn-drip > span::after,
+  .nav-cta:hover .btn-drip > span::after,
+  .btn-text.bleed:hover .btn-drip > span::after,
+  .autor-social a:hover .btn-drip > span::after{
+    animation: dripDrop var(--dd, 3.8s) cubic-bezier(0.55,0.05,0.7,0.2) var(--dly, .6s) infinite;
+  }
+
+  /* Per-drip variations: positions, max-heights, delays, speeds */
+  .btn-drip > span:nth-child(1){left:14%; --dh:60px;  --gd:2.6s; --dd:3.4s; --dly:.4s; animation-delay:.15s}
+  .btn-drip > span:nth-child(2){left:32%; --dh:140px; --gd:4.2s; --dd:4.6s; --dly:1.1s; animation-delay:.55s}
+  .btn-drip > span:nth-child(3){left:50%; --dh:40px;  --gd:2.0s; --dd:3.0s; --dly:.2s; animation-delay:.35s}
+  .btn-drip > span:nth-child(4){left:68%; --dh:100px; --gd:3.4s; --dd:4.0s; --dly:.8s; animation-delay:.05s}
+  .btn-drip > span:nth-child(5){left:86%; --dh:75px;  --gd:2.8s; --dd:3.5s; --dly:.5s; animation-delay:.25s}
+
+  /* Ensure wrappers don't clip the drips */
+  .btn-primary, .amazon-cta, .btn-ghost, .nav-cta{overflow:visible}
+  .btn-text.bleed, .autor-social a{overflow:visible; position:relative}
+
+  /* Fix amazon-cta: ::before was covering drip z-index */
+  .amazon-cta::before{z-index:0}
+  .amazon-cta > *:not(.btn-drip){position:relative; z-index:1}
+
+  /* Autor social bleed: smaller drips (icon buttons) */
+  .autor-social a .btn-drip > span:nth-child(1){--dh:24px; --gd:1.6s; --dd:2.4s}
+  .autor-social a .btn-drip > span:nth-child(2){--dh:42px; --gd:2.4s; --dd:3.0s}
+  .autor-social a .btn-drip > span:nth-child(3){--dh:18px; --gd:1.4s; --dd:2.2s}
+
+  .btn-text{
+    font-family:var(--serif-body); font-size:15px; color:var(--bone-dim);
+    text-decoration:underline; text-decoration-color:rgba(139,0,0,.6);
+    text-underline-offset:5px; text-decoration-thickness:1px;
+    transition:color .4s var(--ease), text-decoration-color .4s var(--ease);
+  }
+  .btn-text:hover{color:var(--blood-live); text-decoration-color:var(--blood-live)}
+
+  .hero-right{position:relative; z-index:1; display:flex; justify-content:center; align-items:center}
+  .cover-wrap{
+    position:relative;
+    width:min(420px, 90%);
+    aspect-ratio:1;
+    transition:transform .8s var(--ease);
+    will-change:transform;
+  }
+  .cover-wrap img{
+    width:100%; height:100%; object-fit:contain;
+    filter:drop-shadow(0 30px 60px rgba(196,30,30,.25)) drop-shadow(0 10px 20px rgba(0,0,0,.8));
+  }
+  .cover-glow{
+    position:absolute; inset:-20%;
+    background:radial-gradient(circle at 50% 55%, rgba(196,30,30,.22), transparent 55%);
+    z-index:-1;
+    animation:pulse 6s ease-in-out infinite;
+  }
+  @keyframes pulse{
+    0%,100%{opacity:.7; transform:scale(1)}
+    50%{opacity:1; transform:scale(1.05)}
+  }
+
+  /* Ticker */
+  .expediente-ticker{
+    position:absolute; bottom:28px; left:clamp(20px,5vw,80px); right:clamp(20px,5vw,80px);
+    display:flex; justify-content:space-between; align-items:center;
+    font-family:var(--mono); font-size:10px; letter-spacing:.28em; text-transform:uppercase;
+    color:rgba(139,0,0,.75);
+    border-top:1px solid rgba(139,0,0,.25); padding-top:14px;
+  }
+  .expediente-ticker .blink{
+    width:6px; height:6px; background:var(--blood-live); border-radius:50%;
+    display:inline-block; margin-right:8px;
+    animation:blink 2s ease-in-out infinite;
+  }
+  @keyframes blink{0%,45%,100%{opacity:1}50%,55%{opacity:.2}}
+
+  @media (max-width:900px){
+    .hero{grid-template-columns:1fr; gap:48px; text-align:left; padding-top:120px}
+    .hero-right{order:-1}
+    .cover-wrap{width:min(320px, 75%)}
+    .expediente-ticker{flex-direction:column; gap:10px; align-items:flex-start}
+  }
+
+  /* ---------- HISTORIA ---------- */
+  .historia{
+    display:grid; grid-template-columns:1.5fr 1fr; gap:80px;
+    max-width:1360px; margin:0 auto;
+  }
+  .synopsis{position:relative}
+  .synopsis p{
+    font-size:19px; line-height:1.75; color:var(--bone-dim);
+    margin:0 0 1.2em;
+  }
+  .synopsis p:first-of-type::first-letter{
+    font-family:var(--serif-display);
+    font-size:88px; font-weight:600;
+    float:left; line-height:.85; padding:4px 14px 0 0;
+    color:var(--blood);
+  }
+  .syn-sep{
+    display:flex; justify-content:center; align-items:center; margin:32px 0;
+    color:var(--blood); font-size:20px; letter-spacing:1em;
+  }
+  .syn-sep::before, .syn-sep::after{
+    content:""; flex:1; height:1px; background:linear-gradient(90deg, transparent, rgba(139,0,0,.4), transparent);
+  }
+  .syn-sep span{padding:0 18px; font-family:var(--serif-display); font-style:italic; color:var(--blood)}
+
+  .fichas{display:flex; flex-direction:column; gap:22px}
+  .ficha{
+    position:relative;
+    border:1px solid rgba(139,0,0,.45);
+    padding:22px 24px 24px;
+    background:linear-gradient(180deg, rgba(21,17,15,.6), rgba(15,12,11,.3));
+  }
+  .ficha::before{
+    content:"CLASIFICADO";
+    position:absolute; top:14px; right:14px;
+    font-family:var(--mono); font-size:8px; letter-spacing:.25em;
+    color:rgba(196,30,30,.85);
+    border:1px solid rgba(196,30,30,.65);
+    padding:3px 6px;
+    transform:rotate(6deg);
+  }
+  .ficha:nth-child(2)::before{content:"CONFIDENCIAL"}
+  .ficha:nth-child(3)::before{content:"ARCHIVO 20-B"}
+  .ficha-label{
+    font-family:var(--mono); font-size:10px; letter-spacing:.3em; text-transform:uppercase;
+    color:var(--ash); margin-bottom:10px;
+  }
+  .ficha-value{
+    font-family:var(--serif-display); font-size:22px; color:var(--bone); line-height:1.2;
+  }
+  .ficha-value .sub{display:block; font-size:14px; color:var(--ash); font-family:var(--serif-body); font-style:italic; margin-top:4px}
+
+  .pullquote{
+    margin:120px auto 0;
+    max-width:900px;
+    text-align:center;
+    font-family:var(--serif-display);
+    font-style:italic;
+    font-size:clamp(32px, 4.6vw, 56px);
+    line-height:1.15;
+    color:var(--blood-live);
+    padding:40px 20px;
+    position:relative;
+  }
+  .pullquote::before, .pullquote::after{
+    content:""; display:block; width:60px; height:1px;
+    background:var(--blood); margin:0 auto;
+  }
+  .pullquote::before{margin-bottom:30px}
+  .pullquote::after{margin-top:30px}
+  .pullquote .attr{
+    display:block; font-size:12px; font-family:var(--mono); font-style:normal;
+    letter-spacing:.3em; color:var(--ash); margin-top:22px; text-transform:uppercase;
+  }
+
+  @media (max-width:900px){
+    .historia{grid-template-columns:1fr; gap:48px}
+    .pullquote{margin-top:72px}
+  }
+
+  /* ---------- CAPÍTULO ---------- */
+  .chapter-section{
+    background:var(--ink-2);
+    position:relative;
+    border-top:1px solid rgba(139,0,0,.25);
+    border-bottom:1px solid rgba(139,0,0,.25);
+    padding:140px clamp(20px,5vw,80px);
+  }
+  .chapter-section::before{
+    content:""; position:absolute; top:0; left:50%; transform:translate(-50%,-50%);
+    width:60px; height:60px; background:var(--ink-2);
+    border:1px solid rgba(139,0,0,.45);
+    display:flex; align-items:center; justify-content:center;
+    z-index:2;
+  }
+  .chapter-head{
+    text-align:center; margin-bottom:80px; position:relative;
+  }
+  .chapter-num{
+    font-family:var(--mono); font-size:11px; letter-spacing:.4em; color:var(--blood-live);
+    margin-bottom:18px; text-transform:uppercase;
+  }
+  .chapter-title{
+    font-family:var(--serif-display);
+    font-size:clamp(48px, 6vw, 88px);
+    font-weight:500;
+    color:var(--bone);
+    line-height:1;
+  }
+  .chapter-meta{
+    font-family:var(--mono); font-size:10px; letter-spacing:.28em; color:var(--ash-dim);
+    margin-top:22px; text-transform:uppercase;
+  }
+  .chapter-ornament{
+    display:flex; justify-content:center; margin:32px 0 0;
+    color:var(--blood);
+    font-size:22px;
+    letter-spacing:.6em;
+  }
+
+  .reader{
+    max-width:660px;
+    margin:0 auto;
+    font-family:var(--serif-body);
+    font-size:19px;
+    line-height:1.75;
+    color:var(--bone);
+    position:relative;
+  }
+  .reader p{margin:0 0 1.3em; text-indent:1.8em}
+  .reader p:first-of-type{text-indent:0}
+  .reader p:first-of-type::first-letter{
+    font-family:var(--serif-display);
+    font-weight:600;
+    font-size:98px;
+    line-height:.85;
+    float:left;
+    padding:6px 16px 0 0;
+    color:var(--blood);
+  }
+  .reader .scene-break{
+    text-align:center; margin:2em 0;
+    color:var(--blood); letter-spacing:1em; font-size:18px;
+  }
+  .reader .dash{color:var(--ash-dim)}
+  .reader em{color:var(--bone-dim)}
+
+  .reader-fade{
+    position:relative;
+    margin-top:-60px;
+    padding-top:180px;
+    background:linear-gradient(to bottom, transparent 0%, var(--ink-2) 85%);
+    text-align:center;
+  }
+  .continua{
+    font-family:var(--serif-display); font-style:italic;
+    font-size:22px; color:var(--bone-dim);
+    margin-bottom:30px;
+  }
+  .continua strong{color:var(--blood-live); font-style:normal; font-weight:500}
+  .amazon-cta{
+    display:inline-flex; align-items:center; gap:14px;
+    font-family:var(--mono); font-size:12px; letter-spacing:.28em; text-transform:uppercase;
+    background:var(--blood-live); color:var(--bone);
+    padding:22px 40px; text-decoration:none;
+    transition:all .5s var(--ease); position:relative; white-space:nowrap; justify-content:center;
+  }
+  .amazon-cta::before{
+    content:""; position:absolute; inset:0; background:var(--blood);
+    transform:scaleY(0); transform-origin:bottom; transition:transform .5s var(--ease);
+  }
+  .amazon-cta > *:not(.btn-drip){position:relative; z-index:1}
+  .amazon-cta:hover{letter-spacing:.32em}
+  .amazon-cta:hover::before{transform:scaleY(1)}
+  .amazon-note{
+    display:block; margin-top:24px;
+    font-family:var(--mono); font-size:10px; letter-spacing:.28em;
+    color:var(--ash-dim); text-transform:uppercase;
+  }
+
+  /* ---------- VOCES ---------- */
+  .voces{max-width:1400px; margin:0 auto}
+  .voces-head{display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:20px; margin-bottom:56px}
+  .voces-head h2{font-family:var(--serif-display); font-size:clamp(44px, 5vw, 72px); color:var(--bone)}
+  .voces-grid{
+    columns:3; column-gap:28px;
+  }
+  @media (max-width:1000px){ .voces-grid{columns:2} }
+  @media (max-width:640px){ .voces-grid{columns:1} }
+
+  .card{
+    break-inside:avoid;
+    margin:0 0 28px;
+    padding:26px 28px 28px;
+    background:linear-gradient(180deg, #1A1713, #161310);
+    border:1px solid rgba(232,224,208,.1);
+    box-shadow:
+      inset 0 1px 0 rgba(232,224,208,.04),
+      2px 6px 0 rgba(0,0,0,.6);
+    position:relative;
+    transition:transform .5s var(--ease), border-color .5s var(--ease);
+  }
+  .card:nth-child(3n){transform:rotate(-.4deg)}
+  .card:nth-child(3n+1){transform:rotate(.3deg)}
+  .card:hover{border-color:rgba(196,30,30,.4); transform:rotate(0)}
+  .card::before{
+    content:""; position:absolute; top:-1px; left:-1px; right:-1px; height:1px;
+    background:linear-gradient(90deg, transparent, rgba(166,139,91,.25), transparent);
+  }
+  .card-stars{
+    color:var(--blood); font-size:11px; letter-spacing:.25em;
+    margin-bottom:14px;
+  }
+  .card-quote{
+    font-family:var(--serif-display);
+    font-style:italic;
+    font-size:22px; line-height:1.3;
+    color:var(--bone);
+    margin:0 0 16px;
+  }
+  .card-quote::before{content:"“"; color:var(--blood); font-size:34px; line-height:0; position:relative; top:8px; margin-right:4px}
+  .card-attr{
+    font-family:var(--mono); font-size:10px; letter-spacing:.25em; text-transform:uppercase;
+    color:var(--ash);
+    display:flex; align-items:center; gap:10px;
+  }
+  .card-attr::before{content:"—"; color:var(--blood)}
+
+  /* ---------- AUTOR ---------- */
+  .autor{
+    display:grid; grid-template-columns:1fr 1.4fr; gap:70px; align-items:center;
+    max-width:1200px; margin:0 auto;
+  }
+  .autor-photo{
+    aspect-ratio:4/5;
+    background:var(--ink-3);
+    position:relative;
+    overflow:hidden;
+    border:1px solid rgba(232,224,208,.08);
+  }
+  .autor-photo .placeholder{
+    position:absolute; inset:0;
+    background:
+      repeating-linear-gradient(135deg, rgba(232,224,208,.03) 0 2px, transparent 2px 14px),
+      linear-gradient(180deg, #1E1A17, #120F0D);
+    display:flex; align-items:center; justify-content:center;
+    flex-direction:column; gap:18px;
+  }
+  .autor-photo .initials{
+    font-family:var(--serif-display); font-weight:500;
+    font-size:140px; color:var(--bone-dim); letter-spacing:-.02em;
+    line-height:1;
+    text-shadow:0 2px 12px rgba(0,0,0,.6);
+  }
+  .autor-photo .ph-tag{
+    font-family:var(--mono); font-size:9px; letter-spacing:.3em; color:var(--ash-dim);
+    text-transform:uppercase;
+  }
+  .autor-text h2{font-family:var(--serif-display); font-size:clamp(42px, 4.4vw, 64px); color:var(--bone); margin-bottom:8px}
+  .autor-text .autor-role{
+    font-family:var(--mono); font-size:11px; letter-spacing:.32em; color:var(--blood-live);
+    text-transform:uppercase; margin-bottom:28px;
+  }
+  .autor-text p{font-size:18px; line-height:1.75; color:var(--bone-dim); margin:0 0 1.1em; max-width:620px}
+  .autor-social{
+    margin-top:32px; display:flex; gap:14px;
+  }
+  .autor-social a{
+    width:42px; height:42px; display:flex; align-items:center; justify-content:center;
+    border:1px solid rgba(232,224,208,.15); color:var(--ash);
+    text-decoration:none; transition:all .4s var(--ease);
+  }
+  .autor-social a:hover{border-color:var(--blood-live); color:var(--blood-live)}
+  .autor-social svg{width:16px; height:16px}
+  @media (max-width:900px){
+    .autor{grid-template-columns:1fr; gap:40px}
+    .autor-photo{max-width:320px}
+  }
+
+  /* ---------- COMPRAR ---------- */
+  .comprar{
+    text-align:center; padding:160px clamp(20px,5vw,80px) 140px;
+    background:var(--ink-1);
+    border-top:1px solid rgba(232,224,208,.05);
+  }
+  .comprar .final-cover{
+    width:min(260px, 60%); margin:0 auto 40px;
+  }
+  .comprar h2{
+    font-family:var(--serif-display); font-size:clamp(46px, 6vw, 88px);
+    color:var(--bone); line-height:.95; margin-bottom:10px;
+  }
+  .comprar .author{
+    font-family:var(--serif-display); font-style:italic;
+    font-size:24px; color:var(--bone-dim); margin-bottom:30px;
+  }
+  .comprar-meta{
+    font-family:var(--mono); font-size:10px; letter-spacing:.3em; color:var(--ash-dim);
+    text-transform:uppercase;
+    display:flex; gap:18px; justify-content:center; flex-wrap:wrap;
+    margin-bottom:48px;
+  }
+  .comprar-meta span{display:flex; align-items:center; gap:18px}
+  .comprar-meta span + span::before{content:"·"; color:var(--blood); margin-right:18px}
+  .comprar-ctas{
+    display:flex; gap:20px; justify-content:center; flex-wrap:wrap;
+  }
+  .btn-ghost{
+    display:inline-flex; align-items:center; gap:12px;
+    font-family:var(--mono); font-size:11px; letter-spacing:.28em; text-transform:uppercase;
+    color:var(--bone);
+    border:1px solid var(--blood);
+    padding:18px 28px;
+    text-decoration:none;
+    transition:all .5s var(--ease);
+  }
+  .btn-ghost:hover{background:var(--blood); border-color:var(--blood)}
+  .btn-ghost.solid{background:var(--blood-live); border-color:var(--blood-live)}
+  .btn-ghost.solid:hover{background:var(--blood); border-color:var(--blood)}
+  .comprar-fine{
+    margin-top:30px; font-family:var(--mono); font-size:10px; letter-spacing:.25em;
+    color:var(--ash-dim); text-transform:uppercase;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background:#050505; padding:60px 20px 40px; text-align:center;
+    border-top:1px solid rgba(232,224,208,.04);
+  }
+  .footer-spade{color:var(--blood); font-size:18px; margin-bottom:22px}
+  footer .copyright{
+    font-family:var(--mono); font-size:10px; letter-spacing:.25em; color:var(--ash-dim);
+    text-transform:uppercase; margin-bottom:14px;
+  }
+  footer .f-links{
+    display:flex; gap:20px; justify-content:center;
+    font-family:var(--mono); font-size:10px; letter-spacing:.25em; text-transform:uppercase;
+  }
+  footer .f-links a{color:var(--ash-dim); text-decoration:none; transition:color .4s var(--ease)}
+  footer .f-links a:hover{color:var(--bone)}
+
+  /* Easter egg overlay */
+  .easter{
+    position:fixed; inset:0; z-index:200;
+    display:flex; align-items:center; justify-content:center;
+    background:rgba(10,10,10,.88);
+    opacity:0; pointer-events:none;
+    transition:opacity .7s var(--ease);
+    font-family:var(--serif-display); font-style:italic;
+    font-size:clamp(28px, 4vw, 48px);
+    color:var(--bone);
+    text-align:center; padding:40px;
+    letter-spacing:-.005em;
+  }
+  .easter.show{opacity:1}
+  .easter .attr{
+    display:block; font-size:13px; font-family:var(--mono); letter-spacing:.3em;
+    color:var(--blood-live); text-transform:uppercase; margin-top:22px;
+  }
+
+  /* Cursor (desktop only) */
+  @media (hover:hover) and (pointer:fine){
+    body.cursor-on{cursor:none}
+    .cursor{
+      position:fixed; width:18px; height:18px; border:1px solid var(--blood-live);
+      border-radius:50%;
+      top:0; left:0;
+      transform:translate(-50%,-50%);
+      pointer-events:none; z-index:500;
+      transition:width .3s var(--ease), height .3s var(--ease), border-color .3s var(--ease), background-color .3s var(--ease);
+      mix-blend-mode:difference;
+    }
+    .cursor-dot{
+      position:fixed; width:4px; height:4px; background:var(--blood-live); border-radius:50%;
+      top:0; left:0;
+      transform:translate(-50%,-50%);
+      pointer-events:none; z-index:501;
+    }
+    body.cursor-on .cursor.big{width:52px; height:52px; background:rgba(196,30,30,.18)}
+  }
+
+  /* Reveal on scroll */
+  .reveal{opacity:0; transform:translateY(24px); transition:opacity .9s var(--ease), transform .9s var(--ease)}
+  .reveal.in{opacity:1; transform:none}
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation-duration:.01ms !important; transition-duration:.01ms !important}
+  }
+
+  
+  /* ===== HARD OVERRIDE — ensure drip positioning wins over specific parents ===== */
+  .btn-primary .btn-drip,
+  .amazon-cta .btn-drip,
+  .btn-ghost .btn-drip,
+  .nav-cta .btn-drip,
+  .btn-text.bleed .btn-drip,
+  .autor-social a .btn-drip{
+    position:absolute !important;
+    top:100% !important;
+    left:0 !important;
+    right:0 !important;
+    bottom:auto !important;
+    width:100% !important;
+    height:0 !important;
+    display:block !important;
+    z-index:3 !important;
+    pointer-events:none;
+  }
+  /* Social buttons: only 3 drip spans — spread across full width */
+  .autor-social a .btn-drip > span:nth-child(1){left:22%; --dh:22px; --gd:1.8s; --dd:2.6s; --dly:.3s}
+  .autor-social a .btn-drip > span:nth-child(2){left:50%; --dh:38px; --gd:2.4s; --dd:3.0s; --dly:.8s}
+  .autor-social a .btn-drip > span:nth-child(3){left:78%; --dh:18px; --gd:1.6s; --dd:2.4s; --dly:.2s}
+
+
+  /* Ensure every bleeding button is a positioning context so drips anchor to it */
+  .btn-primary, .amazon-cta, .btn-ghost, .nav-cta, .btn-text.bleed, .autor-social a{
+    position:relative !important;
+  }
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-brand"><span class="spade">♠</span> Dados Sangrientos</div>
+  <a class="nav-cta bleed" href="https://www.amazon.es/dp/8409615800" target="_blank" rel="noopener"><span>Comprar ↗</span><span class="btn-drip" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span></a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-left reveal">
+    <h1 class="h-hero">
+      <span class="line">Dados</span>
+      <span class="line sangrientos">Sangrientos</span>
+    </h1>
+    <p class="hero-pitch">Un espía americano. <span class="accent">Una misión imposible.</span></p>
+    <div class="hero-ctas">
+      <a href="#capitulo" class="btn-primary">
+        <span>Leer el primer capítulo</span>
+        <span class="arrow">→</span>
+        <span class="btn-drip" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </span>
+      </a>
+      <a href="https://www.amazon.es/dp/8409615800" target="_blank" rel="noopener" class="btn-text bleed"><span>Comprar en Amazon</span><span class="btn-drip" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span></a>
+    </div>
+  </div>
+  <div class="hero-right reveal">
+    <div class="cover-wrap" id="cover">
+      <div class="cover-glow"></div>
+      <!-- Portada: reemplazar assets/dice.png por la imagen final de cubierta si procede -->
+      <img src="assets/portada.png" alt="Portada de Dados Sangrientos — Un dado de piedra con motivos de naipes cubierto de sangre" />
+    </div>
+  </div>
+
+  <div class="expediente-ticker">
+    <span><span class="blink"></span>Expediente 20-B · Buenos Aires → Cádiz</span>
+    <span>Clasificación: confidencial</span>
+    </div>
+</section>
+
+<!-- HISTORIA -->
+<section id="pullquote-section" style="padding:140px clamp(20px,5vw,80px);"><blockquote class="pullquote reveal">
+    “A veces, el control es solo una ilusión.”
+  </blockquote></section>
+
+<!-- CAPÍTULO -->
+<section id="capitulo" class="chapter-section">
+  <div class="chapter-head reveal">
+    <div class="chapter-num">Capítulo uno</div>
+    <h2 class="chapter-title">El barco</h2>
+    <div class="chapter-ornament">♠ · ♣ · ♠</div>
+    <div class="chapter-meta">Buenos Aires · Junio 1947</div>
+  </div>
+
+  <div class="reader" id="reader">
+    <p>Alzó tanto el vaso que la cerveza se le derramó por las comisuras, manchándole la camisa y dejándole la mandíbula pringosa. El polvoriento reloj de pared marcaba las nueve y veinte, hora de pedir la tercera ronda. Tragaba buches de manera mecánica, parando solo para darle caladas temblorosas a un cigarro, mientras seguía de reojo el oscilar del péndulo. George se preguntaba por qué su padre le había citado en aquella destartalada taberna del muelle, que apestaba a orines y serrín. Quizás no quería ser visto a su lado en uno de los cafés que rodeaban la embajada. Como de costumbre, llegaba tarde. Esperaba una de sus excusas habituales, que se había entretenido con un alto dignatario o que un cable diplomático requería su atención. A pesar de que detestaba su impuntualidad, una parte de él prefería que no apareciera. Hacía escasos días que había perdido el puesto de redactor en el periódico donde le había enchufado. No iba a ser una conversación agradable.</p>
+
+    <p>Miraba a ambos lados con la frente perlada de sudor. El fresco nocturno de mediados de junio se adueñaba de Buenos Aires y hacía que el mugriento tugurio estuviera casi desierto. Solo había un par de parroquianos viejos leyendo gacetas y un marinero que charlaba con el camarero, dejado caer al final de la barra, con sus morenos antebrazos llenos de tatuajes. La radio emitía un ronco discurso de Perón que todos ignoraban. Pidió otra jarra. El consumo empezaba a pasarle factura y tuvo que ir al servicio otra vez. A partir del primer litro de alcohol, sus riñones se negaban a procesar más líquido y su cuerpo lo expulsaba tal como lo bebía. Al regresar al mostrador encontró junto a su cerveza a un individuo trajeado, cuyo sombrero casi rozaba el techo.</p>
+
+    <p><span class="dash">―</span>¿George Benavente? <span class="dash">―</span>preguntó el tipo con un marcado acento norteamericano<span class="dash">―</span>. Su padre no ha podido venir. Acompáñeme.</p>
+
+    <p>El hombre se alejó de la barra sin esperar respuesta, moviéndose con una gracia y precisión que revelaban años de disciplina. George agarró su vaso medio vacío y le siguió hasta una mesa del fondo.</p>
+
+    <p><span class="dash">―</span>¿Quién es usted?</p>
+
+    <p><span class="dash">―</span>Veo que no me recuerda. Puede llamarme míster Hoffman. Vengo desde Nueva York expresamente para verle. Los informes que nos llegan sobre usted son decepcionantes.</p>
+
+    <p>Con un gesto impecable, liberó uno de los botones de su reluciente chaqueta al tiempo que se sentaba. Hoffman extrajo unos papeles de un reluciente maletín de cuero y los leyó en silencio. George fumaba tan nervioso que el humo se le metió en el ojo izquierdo y tuvo que frotárselo hasta llorar. Trataba de escudriñar a su extraño interlocutor, pero el rostro de Hoffman se mantenía impasible. Su robusta mandíbula, afeitada a la perfección, reflejaba la tenue luz de las lámparas colgantes, dándole un aspecto casi etéreo. A pesar de tenerle a un metro de distancia, le era imposible averiguar el color de sus ojos, ocultos bajo la sombra que proyectaba su sombrero.</p>
+
+    <p><span class="dash">―</span>Sobre mi fracaso con la misión de desinformación, permítame decirle que...</p>
+
+    <p><span class="dash">―</span>Silencio <span class="dash">―</span>interrumpió Hoffman alzando la mano derecha mientras ojeaba los papeles y los leía en voz alta<span class="dash">―</span>. <em>«El señor Benavente ha mostrado reiteradamente comportamientos negligentes, dejándose llevar por los peores vicios y poniendo en peligro su tapadera, así como anteponiendo sus intereses personales al cumplimiento del deber. Sus actos han comprometido no solo su misión, sino también la de su familia y el resto del cuerpo diplomático. Recomiendo sacarle con urgencia de Argentina y evaluar su futuro en nuestras filas».</em></p>
+
+    <p>Hoffman alzó la vista y la clavó en George, que jugueteaba con su vaso vacío y lo hacía bailotear ruidoso sobre la pegajosa madera. Observó que su cabello, aunque salpicado de gris, estaba teñido y repeinado. Hoffman sacó una pipa de fumar ya cargada y chasqueó una cerilla para encenderla.</p>
+
+    <p><span class="dash">―</span>Suena como la voz de mi padre.</p>
+
+    <p><span class="dash">―</span>Correcto. Llevo décadas trabajando codo con codo con él y le considero mi mentor. Puede que no se acuerde de mí, pero yo le vi crecer en la embajada de La Habana. Aunque no madurar, según me confesó su padre. Me informa que tiene usted cierta tendencia a llevarle la contraria, y ha decidido delegar en mí la supervisión de sus actividades, por el bien de nuestra nación. <span class="dash">―</span>Hoffman apartó los papeles y se reclinó sobre la mesa. Sus ojos eran verdes<span class="dash">―</span>. Ahora debe elegir qué quiere hacer con su futuro. ¿Desea corregir su trayectoria y servir a su país, como lleva haciendo su familia varias generaciones, o prefiere tirarlo todo por la borda? Su destino está bajo su control.</p>
+
+    <p>Comenzó a abrir la boca cuando el retumbar del bocinazo de un barco le asustó. A George se le escapó el vaso, que rodó por la mesa con estrépito, pero la mano de Hoffman saltó como un resorte y lo cazó antes de que cayera al suelo. Su mente divagó un instante, captando parte del discurso radiofónico:</p>
+
+    <p style="text-indent:0; text-align:center; color:var(--ash); font-style:italic;">«En este momento histórico, es necesario que los descamisados argentinos y los obreros españoles de Franco, líder de la Madre Patria, colaboren con solidaridad para garantizar el futuro de nuestras dos naciones hermanas...»</p>
+
+    <p>Hoffman martilleó con el vaso tres veces en la mesa, demandando la atención de George.</p>
+
+    <p><span class="dash">―</span>Si hay algo que he aprendido <span class="dash">―</span>dijo este<span class="dash">―</span>, es que nada está bajo mi control. Por más que planeo mi futuro, siempre hay alguien inmiscuyéndose en mis asuntos...</p>
+
+    <p><span class="dash">―</span>Basta de cháchara. No he viajado desde los Estados Unidos para darle apoyo psicológico. Vengo a ofrecerle que pruebe su valía.</p>
+
+    <p><span class="dash">―</span>¿De qué se trata?</p>
+
+    <p><span class="dash">―</span>Durante todo el año hemos recibido informes contradictorios de franceses e ingleses sobre la posición exterior del gobierno de Franco. Sospechamos que los rusos quieren dividir a nuestros aliados y provocar una crisis diplomática. Por otro lado, llevamos años boicoteando a España con un contundente bloqueo económico para provocar la caída del régimen, pero de alguna manera lo están esquivando. La estrategia de aislar a Franco de la comunidad internacional no está funcionando.</p>
+
+    <p><span class="dash">―</span>No creo que la Unión Soviética esté detrás de esto.</p>
+
+    <p><span class="dash">―</span>Lo que usted crea no nos importa. Necesitamos infiltrar nuestra propia misión de reconocimiento para extraer información, establecer alianzas con contactos locales y evaluar posibles emplazamientos para una futura base naval americana. <span class="dash">―</span>Los ojos de Hoffman, que parecían absorber y evaluar todo, se posaron en una ventana<span class="dash">―</span>. ¿Ve ese barco, al fondo del muelle? Es un carguero que zarpará en unas horas con toneladas de trigo y víveres que Perón enviará a España, burlando nuestros embargos. En la bodega va un ataúd que contiene los restos de un diplomático español que está siendo repatriado. Usted viajará escondido en una de esas cajas de trigo y será recibido en el puerto de Cádiz por una colaboradora del servicio inglés que le dará todos los detalles de la misión y le guiará en sus movimientos. Lo más importante es que debe demostrar que está dispuesto a hacer lo que se le ordene. Sea lo que sea.</p>
+
+    <p>George contempló el débil reflejo de la luna en el agua iluminando el carguero atracado en el muelle, cuya silueta se recortaba en la noche. Su juicio estaba nublado por la cerveza y, llegado a este punto de la borrachera, tenía la insana manía de decir lo que pensaba.</p>
+
+    <p><span class="dash">―</span>¿Y si me niego?</p>
+
+    <p>Las cejas de Hoffman se alzaron tan abruptamente que su sombrero se movió. Hoffman levantó su vaso y lo lanzó al suelo, rompiéndolo en mil pedazos. George miró hacia la barra. El camarero apagó la radio y dio un potente silbido, señal para que los pocos clientes se levantaran y abandonaran el bar. Una vez más, George sentía que el control de su vida se le escapaba de las manos.</p>
+
+    <p><span class="dash">―</span>¿Cuándo debo partir?</p>
+
+    <p><span class="dash">―</span>Ahora mismo. <span class="dash">―</span>Hoffman deslizó con un enérgico ademán un maletín de cuero hacia él<span class="dash">―</span>. Aquí tiene todo lo que necesita para hacerse pasar por representante comercial, incluyendo un pasaporte argentino a nombre de «Jorge Benavente». Durante la travesía se mantendrá oculto para no llamar la atención de la inteligencia española. Varios miembros de la tripulación trabajan para nosotros y se encargarán de su alimentación. No debe intercambiar palabra con ellos. Hará escala en Tánger y allí cambiarán la carga a un barco español. Yo viajaré a Madrid como asociado del Banco Import-Export y estaré en la embajada hasta finales de agosto. A su llegada a Cádiz recibirá instrucciones sobre cómo ponerse en contacto conmigo. Al final de su misión, evaluaremos su carrera en el servicio secreto. <span class="dash">―</span>Hoffman se levantó de la silla y extendió su mano, gesto que generó un profundo miedo en George<span class="dash">―</span>. Ahora entrégueme su pasaporte americano.</p>
+
+    <p>El silencio era tal que George podía oír el tic-tac del reloj de pared y el lento goteo de un grifo mal cerrado. Sacó su pasaporte diplomático y lo estrelló en la mesa, agarrando el maletín y saliendo a paso ligero sin despedirse.</p>
+
+    <p><span class="dash">―</span>No nos decepcione, George. Es su última oportunidad.</p>
+
+    <p>El puerto hedía a petróleo quemado y sal, y los gritos e insultos de los pescadores perforaban el aire. El marinero de los tatuajes le esperaba fuera y le hizo un gesto con la cabeza señalando al barco. Anduvo tras él y se introdujeron en la bodega, donde un reluciente ataúd se encontraba rodeado por altas cajas de madera.</p>
+  </div>
+
+  <div class="reader-fade">
+    <div class="continua">El silencio dura diecisiete días en alta mar.</div>
+    <a href="https://www.amazon.es/dp/8409615800" target="_blank" rel="noopener" class="amazon-cta bleed"><span>Continúa la historia en Amazon</span><span class="arrow">→</span><span class="btn-drip" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span></a>
+    <span class="amazon-note">Disponible en Tapa blanda y Kindle</span>
+  </div>
+</section>
+
+<!-- VOCES -->
+<section id="voces">
+  <div class="voces">
+    <div class="voces-head reveal"><div><h2>Voces</h2></div></div>
+
+    <div class="voces-grid">
+      <article class="card reveal">
+        <div class="card-stars">★ ★ ★ ★ ★</div>
+        <p class="card-quote">Casi 600 páginas y me he quedado con ganas de más.</p>
+        <div class="card-attr">Dani · Lector</div>
+      </article>
+      <article class="card reveal">
+        <div class="card-stars">★ ★ ★ ★ ★</div>
+        <p class="card-quote">De los libros que más me han atrapado de principio a fin.</p>
+        <div class="card-attr">Wei · Lectora</div>
+      </article>
+      <article class="card reveal">
+        <div class="card-stars">★ ★ ★ ★ ★</div>
+        <p class="card-quote">Leído en menos de una semana porque era imposible dejarlo.</p>
+        <div class="card-attr">Jorfi · Lector</div>
+      </article>
+      <article class="card reveal">
+        <div class="card-stars">★ ★ ★ ★ ★</div>
+        <p class="card-quote">Es una lectura imprescindible para comprender el período de la posguerra española.</p>
+        <div class="card-attr">Paco · Lector</div>
+      </article>
+      <article class="card reveal">
+        <div class="card-stars">★ ★ ★ ★ ★</div>
+        <p class="card-quote">Equilibrio perfecto entre autenticidad y ficción.</p>
+        <div class="card-attr">Derrota · Lector</div>
+      </article>
+      <article class="card reveal">
+        <div class="card-stars">★ ★ ★ ★ ★</div>
+        <p class="card-quote">La prosa huele a tabaco, sal y petróleo quemado. Te mete dentro.</p>
+        <div class="card-attr">Lector temprano</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- AUTOR -->
+<section id="autor">
+  <div class="autor">
+    <div class="autor-photo reveal">
+      <!-- Reemplazar por la foto del autor: <img src="assets/autor.jpg" alt="Tony Vazz" /> -->
+      <div class="placeholder">
+        <div class="initials">TV</div>
+        <div class="ph-tag">Retrato · sin revelar</div>
+      </div>
+    </div>
+    <div class="autor-text reveal">
+      <div class="autor-role">El autor</div>
+      <h2>Tony Vazz</h2>
+      <p>Pasó cuatro años investigando y escribiendo <em>Dados Sangrientos</em>, su primera novela. Le interesa la historia vista desde los márgenes: los espías mediocres, los diplomáticos alcohólicos, los personajes que no caben en los bandos.</p>
+      <p>Escribe con la frialdad del observador. Deja que el lector juzgue. Si algo huele a tabaco rancio y sal marina, probablemente sea suyo.</p>
+      <!-- Sustituir bio por versión definitiva del autor cuando esté disponible -->
+      <div class="autor-social">
+        <a href="https://www.tonyvazz.com/" target="_blank" rel="noopener" aria-label="Website">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/></svg>
+          <span class="btn-drip" aria-hidden="true"><span></span><span></span><span></span></span>
+        </a>
+        <a href="https://x.com/vazzdice" target="_blank" rel="noopener" aria-label="X">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 3h3l-7.5 9L22 21h-6l-5-6.5L5 21H2l8-9.5L2 3h6l4.5 6L18 3z"/></svg>
+          <span class="btn-drip" aria-hidden="true"><span></span><span></span><span></span></span>
+        </a>
+        <a href="https://substack.com/@tonyvazz" target="_blank" rel="noopener" aria-label="Substack">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16v2.5H4zM4 8.5h16V11H4zM4 13h16v8l-8-4-8 4z"/></svg>
+          <span class="btn-drip" aria-hidden="true"><span></span><span></span><span></span></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPRAR -->
+<section id="comprar" class="comprar">
+  <div class="reveal">
+    <div class="final-cover">
+      <img src="assets/portada.png" alt="Dados Sangrientos" style="width:100%" />
+    </div>
+    <h2>Dados Sangrientos</h2>
+    <div class="author">Tony Vazz</div>
+    <div class="comprar-meta">
+      <span>ISBN 978-84-09-61580-3</span>
+      <span>572 páginas</span>
+      <span>UNO Editorial</span>
+    </div>
+    <div class="comprar-ctas">
+      <a href="https://www.amazon.es/dp/8409615800" target="_blank" rel="noopener" class="btn-ghost solid bleed"><span>Tapa blanda · Amazon</span><span class="btn-drip" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span></a>
+      <a href="https://www.amazon.es/dp/8409615800" target="_blank" rel="noopener" class="btn-ghost bleed"><span>Kindle · Amazon</span><span class="btn-drip" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span></a>
+    </div>
+    <div class="comprar-fine">Disponible también en Amazon internacional</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-spade">♠</div>
+  <div class="copyright">© 2026 Tony Vazz · Todos los derechos reservados</div>
+  <div class="f-links">
+    <a href="#top">Volver arriba</a>
+    <a href="#">Contacto</a>
+    <a href="#">Privacidad</a>
+    <a href="#">Aviso legal</a>
+  </div>
+</footer>
+
+<!-- Easter egg -->
+<div class="easter" id="easter">
+  <div>
+    “En nuestro mundo hay dos tipos de agente: del orden y del caos. Debe decidir cuál es usted.”
+    <span class="attr">— Paloma · Cádiz, 1947</span>
+  </div>
+</div>
+
+<!-- Mute toggle (placeholder for ambient audio) -->
+<button class="mute" id="mute" aria-label="Activar sonido ambiente" data-on="false">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" id="mute-icon">
+    <path d="M4 9v6h4l5 4V5L8 9H4z"/>
+    <line x1="18" y1="8" x2="22" y2="12" stroke-linecap="round"/>
+    <line x1="22" y1="8" x2="18" y2="12" stroke-linecap="round"/>
+  </svg>
+</button>
+
+<!-- Reading progress -->
+<div class="chapter-progress" id="cProg"><div class="fill" id="cProgFill"></div></div>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cur"></div>
+<div class="cursor-dot" id="curDot"></div>
+
+<script>
+  // ---------- Nav shrink on scroll ----------
+  const nav = document.getElementById('nav');
+  addEventListener('scroll', () => {
+    nav.classList.toggle('solid', scrollY > 40);
+  }, {passive:true});
+
+  // ---------- Reveal on scroll ----------
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // ---------- Parallax cover ----------
+  const cover = document.getElementById('cover');
+  addEventListener('scroll', () => {
+    const y = Math.min(scrollY, 900);
+    cover.style.transform = `translateY(${y*0.05}px) rotate(${y*0.008}deg)`;
+  }, {passive:true});
+
+  // ---------- Chapter reading progress ----------
+  const chapter = document.getElementById('capitulo');
+  const prog = document.getElementById('cProg');
+  const progFill = document.getElementById('cProgFill');
+  addEventListener('scroll', () => {
+    const rect = chapter.getBoundingClientRect();
+    const vh = innerHeight;
+    const total = rect.height - vh;
+    const scrolled = Math.min(Math.max(-rect.top, 0), total);
+    if (rect.top < vh && rect.bottom > 0){
+      prog.classList.add('active');
+      progFill.style.height = (scrolled/total*100) + '%';
+    } else {
+      prog.classList.remove('active');
+    }
+  }, {passive:true});
+
+  // ---------- Easter egg: triple-click on title ----------
+  let clicks = 0, clickTimer;
+  const easter = document.getElementById('easter');
+  document.querySelector('.h-hero').addEventListener('click', () => {
+    clicks++;
+    clearTimeout(clickTimer);
+    clickTimer = setTimeout(() => clicks = 0, 600);
+    if (clicks >= 3){
+      clicks = 0;
+      easter.classList.add('show');
+      setTimeout(() => easter.classList.remove('show'), 3200);
+    }
+  });
+
+  // ---------- Mute toggle (stub - no autoplay, no sound file; wires an oscillator-like ambient if desired) ----------
+  const muteBtn = document.getElementById('mute');
+  let audioCtx = null, ambient = null;
+  muteBtn.addEventListener('click', () => {
+    const on = muteBtn.dataset.on === 'true';
+    if (!on){
+      // Start a very quiet ambient hum (synthetic) — no external files needed
+      try {
+        audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+        if (ambient){ ambient.stop(); }
+        const o1 = audioCtx.createOscillator(); o1.type='sawtooth'; o1.frequency.value=55;
+        const o2 = audioCtx.createOscillator(); o2.type='sine'; o2.frequency.value=82;
+        const filter = audioCtx.createBiquadFilter(); filter.type='lowpass'; filter.frequency.value=320;
+        const gain = audioCtx.createGain(); gain.gain.value=0.018;
+        o1.connect(filter); o2.connect(filter); filter.connect(gain); gain.connect(audioCtx.destination);
+        o1.start(); o2.start();
+        ambient = { stop: () => { o1.stop(); o2.stop(); } };
+        muteBtn.dataset.on = 'true';
+      } catch(e){ /* ignore */ }
+    } else {
+      if (ambient){ ambient.stop(); ambient = null; }
+      muteBtn.dataset.on = 'false';
+    }
+  });
+
+  // ---------- Custom cursor (desktop only) ----------
+  if (matchMedia('(hover:hover) and (pointer:fine)').matches){
+    document.body.classList.add('cursor-on');
+    const cur = document.getElementById('cur');
+    const dot = document.getElementById('curDot');
+    let mx=0,my=0,cx=0,cy=0;
+    addEventListener('mousemove', e => { mx=e.clientX; my=e.clientY; dot.style.left=mx+'px'; dot.style.top=my+'px'; });
+    const tick = () => {
+      cx += (mx-cx)*.18; cy += (my-cy)*.18;
+      cur.style.left = cx+'px'; cur.style.top = cy+'px';
+      requestAnimationFrame(tick);
+    };
+    tick();
+    document.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('mouseenter', () => cur.classList.add('big'));
+      el.addEventListener('mouseleave', () => cur.classList.remove('big'));
+    });
+  }
+
+  </script>
+
+</body>
+</html>
