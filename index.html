@@ -592,21 +592,17 @@
   .voces-more{
     text-align:center;
     margin-top:60px;
+    position:relative;
+    overflow:visible;
   }
   .voces-more a{
     font-family:var(--mono);
     font-size:12px;
     letter-spacing:.2em;
     text-transform:uppercase;
-    color:var(--ash);
-    text-decoration:none;
-    border-bottom:1px solid rgba(232,224,208,.15);
     padding-bottom:4px;
-    transition:all .3s var(--ease);
-  }
-  .voces-more a:hover{
-    color:var(--blood-live);
-    border-bottom-color:var(--blood-live);
+    position:relative;
+    overflow:visible;
   }
 
   /* ---------- AUTOR ---------- */
@@ -1017,7 +1013,7 @@
       </article>
     </div>
     <div class="voces-more reveal">
-      <a href="https://www.amazon.es/dp/8409615800#customerReviews" target="_blank" rel="noopener">Lee todas las reseñas en Amazon →</a>
+      <a href="https://www.amazon.es/dp/8409615800#customerReviews" target="_blank" rel="noopener" class="btn-text bleed">Lee todas las reseñas en Amazon →<span class="btn-drip" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span></a>
     </div>
   </div>
 </section>
